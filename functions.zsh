@@ -36,7 +36,7 @@ function lst() {
 alias -s {md,json,yaml,yml,xml,conf,ini}=code
 
 # A function to drop all files and folders
-# NB: Use with 
+# NB: Use with caution
 function drop() {
   what_to_drop="$@"
   if [ -z $what_to_drop ]; then 
