@@ -12,5 +12,10 @@ The following must be installed for these scripts to work as it:
 
 ## Current Functions
 
-| Function | Description |
-| -- | -- |
+| Function                 | Description                                                   |
+| ------------------------ | ------------------------------------------------------------- |
+| `date -I`                | Displays date in ISO format                                   |
+| `append_to_path`         | Appends something to the path                                 |
+| `current_dir_name`       | Get the current directory name.                               |
+| `lst ~/projects`         | A ls command which displays more information in table format. |
+| `drop ./test.json ./wip` | Drops all files and folders.                                  |
