@@ -10,6 +10,21 @@ The following must be installed for these scripts to work as it:
 2. Python 3
 3. [Exa](https://github.com/ogham/exa)  : powered up version of the humble `ls` command.
 
+## How to hook into these scripts
+
+Clone the this repo to `~/.my-zsh`:
+
+```shell
+git clone git@github.com:andriesfc/my-zsh.git "$HOME/.my-zsh"
+```
+
+Add these lines tou your `~/.zshrc` file:
+
+```shell
+source "$HOME/.my-zsh/functions.zsh"
+source "$HOME/.my-zsh/android-dev-support.zsh"
+```
+
 ## Current Functions
 
 | Function                 | Description                                                   |

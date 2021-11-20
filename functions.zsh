@@ -8,8 +8,6 @@ function date() {
   fi
 }
 
-
-
 function append_to_path() {
   export PATH="$PATH:$1"
 }
@@ -44,8 +42,21 @@ function drop() {
     print "drop <files-or-folders>"
     return
   fi  
+  print "completly removing all files and folders."
   for todo in $@; do 
-    print "now dropping: $todo"
+    print "from: $todo"
     (rm -fr "$todo")
   done 
+}
+
+# Build a complete 
+function mkdirs() {
+  dirs_to_make="$@"
+  if [ -z $dirs_to_make ]; then
+    print "please supply a list of folders to create."
+    return
+  fi
+  for wanting_dir in $@; do
+    mkdir -p $wanting_dir
+  done
 }
