@@ -4,7 +4,7 @@ A collection of zsh extensions and functions to make my life easier.
 
 ## A note on dependencies
 
-The following must be installed for these scripts to work as it:
+The following must be installed for these scripts to work as is:
 
 1. Android SDK
 2. Python 3
