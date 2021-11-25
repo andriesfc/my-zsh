@@ -6,7 +6,7 @@ A collection of zsh extensions and functions to make my life easier.
 
 The following must be installed for these scripts to work as is:
 
-1. Android SDK
+1. Android SDK (if you install the [android-dev-support.zs](android-dev-support.zsh) script)
 2. Python 3
 3. [Exa](https://github.com/ogham/exa)  : powered up version of the humble `ls` command.
 
@@ -27,10 +27,11 @@ source "$HOME/.my-zsh/android-dev-support.zsh"
 
 ## Current Functions
 
-| Function                 | Description                                                   |
-| ------------------------ | ------------------------------------------------------------- |
-| `date -I`                | Displays date in ISO format                                   |
-| `append_to_path`         | Appends something to the path                                 |
-| `current_dir_name`       | Get the current directory name.                               |
-| `lst ~/projects`         | A ls command which displays more information in table format. |
-| `drop ./test.json ./wip` | Drops all files and folders.                                  |
+| Function                           | Description                                                   |
+| ---------------------------------- | ------------------------------------------------------------- |
+| `date -I`                          | Displays date in ISO format                                   |
+| `append_to_path`                   | Appends something to the path                                 |
+| `current_dir_name`                 | Get the current directory name.                               |
+| `lst ~/projects`                   | A ls command which displays more information in table format. |
+| `drop ./test.json ./wip`           | Drops all files and folders.                                  |
+| `resolvepath ~/../../Applications` | Resolves to `/Applications` on Mac                            |
