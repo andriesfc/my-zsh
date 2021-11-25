@@ -27,7 +27,7 @@ source "$HOME/.my-zsh/android-dev-support.zsh"
 
 ## Current Functions
 
-| Function                           | Description                                                   |
+| Function (and example)             | Description                                                   |
 | ---------------------------------- | ------------------------------------------------------------- |
 | `date -I`                          | Displays date in ISO format                                   |
 | `append_to_path`                   | Appends something to the path                                 |
