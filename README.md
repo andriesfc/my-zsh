@@ -6,7 +6,7 @@ A collection of zsh extensions and functions to make my life easier.
 
 The following must be installed for these scripts to work as is:
 
-1. Android SDK (if you install the [android-dev-support.zs](android-dev-support.zsh) script)
+1. Android SDK (if you install the [android-dev-support](android-dev-support.zsh) script)
 2. Python 3
 3. [Exa](https://github.com/ogham/exa)  : powered up version of the humble `ls` command.
 
