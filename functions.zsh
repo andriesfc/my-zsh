@@ -60,3 +60,13 @@ function mkdirs() {
     mkdir -p $wanting_dir
   done
 }
+
+# Simple function to respolve an actual path to an absulte file path.
+# NB: Does not resolve symnlinks!
+function resolvepath() {
+  path_to_resolve="$1"
+  if [ -z $path_to_resolve ]; then
+    path_to_resolve="."
+  fi
+  echo $(cd $path_to_resolve; pwd)  
+}
