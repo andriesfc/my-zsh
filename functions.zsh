@@ -70,3 +70,11 @@ function resolvepath() {
   fi
   echo $(cd $path_to_resolve; pwd)  
 }
+
+function dice() { 
+  java -jar /Users/andriesfc/Dev/dice-1.6.0.jar "$@"
+}
+
+function docker-ps() {
+  docker ps --format "table {{.ID}}\t{{.Names}}"
+}
