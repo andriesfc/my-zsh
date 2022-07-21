@@ -72,9 +72,15 @@ function resolvepath() {
 }
 
 function dice() { 
-  java -jar /Users/andriesfc/Dev/dice-1.6.0.jar "$@"
+  java -jar "$HOME/Dev/dice-1.6.0.jar" --offline "$@"
 }
 
 function docker-ps() {
-  docker ps --format "table {{.ID}}\t{{.Names}}"
+  docker ps --format "table {{.ID}}\t{{.Names}}" "$@"
+}
+
+# Short cut for docker compose -- because who cares about using 
+# an artbitrary precision calculator, and typing oneself to death
+function dc() {
+  docker-compose "$@"
 }
