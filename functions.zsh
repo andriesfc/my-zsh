@@ -75,7 +75,7 @@ function dice() {
   java -jar "$HOME/Dev/dice-1.6.0.jar" --offline "$@"
 }
 
-function docker-ps() {
+function dk-ps() {
   docker ps --format "table {{.ID}}\t{{.Names}}" "$@"
 }
 
@@ -83,4 +83,8 @@ function docker-ps() {
 # an artbitrary precision calculator, and typing oneself to death
 function dc() {
   docker-compose "$@"
+}
+
+function dk() {
+  docker "$@"
 }
