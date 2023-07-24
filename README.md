@@ -18,7 +18,7 @@ Clone the this repo to `~/.my-zsh`:
 git clone git@github.com:andriesfc/my-zsh.git "$HOME/.my-zsh"
 ```
 
-Add these lines tou your `~/.zshrc` file:
+Add these lines to your `~/.zshrc` file:
 
 ```shell
 source "$HOME/.my-zsh/functions.zsh"
