@@ -6,23 +6,12 @@ function date() {
   fi
 }
 
-function append_to_path() {
+function append-to-path() {
   export PATH="$PATH:$1"
 }
 
-function current_dir_name() {
+function current-dir-name() {
   echo $(python3 -c "from pathlib import Path; print(Path('.').absolute().name)")
-}
-
-function lst() {
-
-  local target="$1"
-
-  if [ -z $target ]; then
-    target="."
-  fi
-
-  exa -l -h --group-directories-first -U -F --accessed --time-style long-iso "$target"
 }
 
 # Some interesting alias taken from https://www.thorsten-hans.com/5-types-of-zsh-aliases
@@ -71,4 +60,24 @@ function dc() {
 
 function dk() {
   docker "$@"
+}
+
+function trim() {
+  awk '{$1=$1};1'
+}
+
+# Taken from here: https://stackoverflow.com/a/32142458/255645
+expandtilde() {
+
+  local tilde_re='^(~[A-Za-z0-9_.-]*)(.*)'
+  local path="$*"
+  local pathSuffix=
+
+  if [[ $path =~ $tilde_re ]]; then
+    # only use eval on the ~username portion !
+    path=$(eval echo ${BASH_REMATCH[1]})
+    pathSuffix=${BASH_REMATCH[2]}
+  fi
+
+  echo "${path}${pathSuffix}"
 }

@@ -1,3 +1,5 @@
-alias codenw="code --new-window"
-alias codeh="code --new-window ."
+alias cn="code --new-window"
+alias cnh="code --new-window ."
 alias ideah="idea ."
+alias ls='exa --header --icons --long --group-directories-first'
+alias lst='exa --header --icons --long --tree --level 3'
