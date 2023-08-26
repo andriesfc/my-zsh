@@ -1,2 +1,0 @@
-package andriesfc.powertoys.config
-
