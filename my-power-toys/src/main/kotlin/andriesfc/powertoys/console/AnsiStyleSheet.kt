@@ -1,0 +1,3 @@
+package andriesfc.powertoys.console
+
+interface AnsiStyleSheet

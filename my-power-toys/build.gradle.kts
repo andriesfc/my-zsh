@@ -41,24 +41,25 @@ dependencies {
 
 }
 
+val jvmLevel = 20
 
 application {
     mainClass.set("andriesfc.powertoys.RootCommandLauncher")
     applicationName = "mpt"
 }
 java {
-    sourceCompatibility = JavaVersion.toVersion("17")
+    sourceCompatibility = JavaVersion.toVersion(jvmLevel)
 }
 
 tasks {
     compileKotlin {
         compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_17)
+            jvmTarget.set(JvmTarget.JVM_20)
         }
     }
     compileTestKotlin {
         compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_17)
+            jvmTarget.set(JvmTarget.JVM_20)
         }
     }
 }

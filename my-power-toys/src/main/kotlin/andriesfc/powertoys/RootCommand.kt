@@ -10,7 +10,7 @@ import picocli.CommandLine.Option
 
 @Command(
     name = "run-power-toy",
-    aliases = ["runpt"],
+    aliases = ["pt"],
     description = ["Runs any of my collection of custom power tools, see help for me detail."],
     version = ["v.0.0.1"],
 )

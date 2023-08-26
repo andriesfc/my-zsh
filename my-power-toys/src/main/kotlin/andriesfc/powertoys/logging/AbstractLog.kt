@@ -7,8 +7,9 @@ import java.util.Objects
 
 abstract class AbstractLog(
     private var logLevel: Level = Level.Silent,
-    private val systemTime: SystemTime,
+    protected val systemTime: SystemTime,
 ) : Log {
+
 
     override fun appliedLogLevel(): Level = logLevel
 
