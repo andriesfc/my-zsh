@@ -27,7 +27,7 @@ java {
 testing {
     suites {
         val test by getting(JvmTestSuite::class) {
-            useJUnitJupiter(versions.junit5)
+            useJUnitJupiter(mtp_versions.junit5)
         }
     }
 }
@@ -40,8 +40,9 @@ kotlin {
 }
 
 dependencies {
-    testImplementation("io.mockk:mockk:${versions.mock}")
-    testImplementation("io.kotest:kotest-runner-junit5:${versions.kotest}")
-    testImplementation("io.kotest:kotest-assertions-core:${versions.kotest}")
-    testImplementation("net.datafaker:datafaker:${versions.datafaker}")
+    testImplementation("io.mockk:mockk:${mtp_versions.mock}")
+    testImplementation("io.kotest:kotest-runner-junit5:${mtp_versions.kotest}")
+    testImplementation("io.kotest:kotest-assertions-core:${mtp_versions.kotest}")
+    testImplementation("net.datafaker:datafaker:${mtp_versions.datafaker}")
 }
+

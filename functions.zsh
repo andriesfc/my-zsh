@@ -45,7 +45,7 @@ function resolvepath() {
 }
 
 function dice() {
-  java -jar "$HOME/Dev/dice-1.6.0.jar" --offline "$@"
+  java -jar "$HOME/Local/dice/dice-1.7.0-optimized.jar" --offline "$@"
 }
 
 function dk-ps() {
@@ -80,4 +80,8 @@ expandtilde() {
   fi
 
   echo "${path}${pathSuffix}"
+}
+
+function rmdirs() {
+  rm -fr "$@"
 }
