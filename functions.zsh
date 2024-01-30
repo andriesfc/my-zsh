@@ -82,6 +82,10 @@ expandtilde() {
   echo "${path}${pathSuffix}"
 }
 
-function rmdirs() {
-  rm -fr "$@"
+function remove() {
+  rm -frv "$@"
+}
+
+function current_branch() {
+  echo "$(git rev-parse --abbrev-ref HEAD)"
 }
