@@ -89,3 +89,7 @@ function remove() {
 function current_branch() {
   echo "$(git rev-parse --abbrev-ref HEAD)"
 }
+
+function ide() {
+  $(idea . & disown idea)
+}
