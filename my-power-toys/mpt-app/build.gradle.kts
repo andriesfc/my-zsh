@@ -28,6 +28,6 @@ java {
 }
 
 application {
-    mainClass = "mpt.PToolMainKt"
+    mainClass = "mpt.Launcher"
     applicationName = "mtp"
 }

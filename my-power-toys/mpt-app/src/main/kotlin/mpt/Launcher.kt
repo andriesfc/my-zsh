@@ -1,20 +1,20 @@
+@file:JvmName("Launcher")
 package mpt
 
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.core.subcommands
-import mpt.tool.jdev.JavaDev
+import mpt.framework.emptyRunnable
+import mpt.tool.java.JavaTool
 
-private class PToolMain() : CliktCommand(
+private class ToolMain() : Runnable by emptyRunnable(), CliktCommand(
     name = "ptool",
     help = """
         A collection tools and scripts for java/kotlin devs.
     """.trimIndent(),
-) {
-    override fun run() = Unit
-}
+)
 
 fun main(args: Array<String>) {
-    PToolMain()
-        .subcommands( JavaDev() )
+    ToolMain()
+        .subcommands(JavaTool())
         .main(args)
 }

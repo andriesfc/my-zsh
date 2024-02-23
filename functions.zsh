@@ -82,7 +82,7 @@ expandtilde() {
   echo "${path}${pathSuffix}"
 }
 
-function remove() {
+function delete() {
   rm -frv "$@"
 }
 
